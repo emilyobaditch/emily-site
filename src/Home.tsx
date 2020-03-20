@@ -1,11 +1,12 @@
 import React from 'react'
 import  Text  from './theme/atoms/Text'
+import Base from './theme/base/Base'
 
 export default function Home(){
 
     return (
-    <Text>
-        Hi
-    </Text>
+    <Base>
+        <Text>this is my website, yo.  </Text>
+    </Base>
     )
 }

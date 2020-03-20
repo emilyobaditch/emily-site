@@ -3,14 +3,16 @@ import styled from 'styled-components'
 
 type Props = {
     children: any
+    fontSize?: string
 }
 
 const TextBase = styled.text`
     fontFamily: Sanchez;
-    color: ${props => props.theme.colors.primary.dark};
+    font-size: ${props => props.fontSize}; 
+    color: ${props => props.theme.colors.primary.ultra};
 `
-export default function Text({children} : Props){
+export default function Text({children, fontSize  = "14px" } : Props){
     return (
-        <TextBase>{children}</TextBase>
+        <TextBase fontSize={fontSize}>{children}</TextBase>
     )
 }
