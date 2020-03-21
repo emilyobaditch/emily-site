@@ -36,7 +36,7 @@ export default function Home() {
             Frontend engineer, UX enthusiast, and chocolate lover based in New York City.{' '}
           </LargeLead>
         </Box>
-        {smUp ? <Image src="/images/emily.jpeg" /> : <MobileImage src="/images/emily.jpeg" />}
+        {smUp ? <Image src="images/emily.jpeg" /> : <MobileImage src="/images/emily.jpeg" />}
       </TopWrapper>
     </Base>
   )
