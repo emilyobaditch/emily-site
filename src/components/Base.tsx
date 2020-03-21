@@ -7,17 +7,21 @@ import Box from '../styleguide/Box'
 type Props = {
   children?: any
 }
-const Content = styled.div`
-  min-height: 100vh;
+const Content = styled(Box)`
+  min-height: calc(100vh - 104px);
   align-items: center;
   display: flex;
 `
+const BaseBase = styled(Box)`
+  margin-top: 64px;
+  overflow: hidden;
+`
 export default function Base({ children }: Props) {
   return (
-    <Box marginTop="64px">
+    <BaseBase>
       <TopBar />
       <Content>{children}</Content>
       <Footer />
-    </Box>
+    </BaseBase>
   )
 }

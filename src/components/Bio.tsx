@@ -26,13 +26,13 @@ export default function Bio() {
     <Base>
       <BioBase>
         <H3 textAlign="center">About Me</H3>
-        <SmallLead textAlign="center">Software, , </SmallLead>
-        <Paragraph padding={[0, 0, '0px 200px']} textAlign="center">
+        <SmallLead textAlign="center">10% Software Engineer, 90% Coffee </SmallLead>
+        <Paragraph padding={['0px 8px', '0px 8px', '0px 200px']} textAlign="center">
           I&apos;m Emily, thanks for coming to my site! Here&apos;s little bit about me. I was born
           in New Jersey, studied Computer Science at the University of Notre Dame (go Irish!) and
           currently live in New York city. I am a frontend engineer with a strong love for React.
-          When I&apos;m not creating awesome code I spend my time trying new restaurants, going to
-          spin class, and listening to music.
+          When I&apos;m not creating awesome code I spend my time searching for the best NYC steak,
+          going to spin class, and listening to music.
           <br />
           <br />
           I&apos;ve made this website to learn new skills and have something to call completely my

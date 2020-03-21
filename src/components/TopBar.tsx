@@ -22,7 +22,7 @@ const Wrapper = styled(Box)`
 export default function TopBar() {
   return (
     <TopBarBase>
-      <H2 paddingLeft="2px">emily</H2>
+      <H2 paddingLeft="12px">emily</H2>
       <Wrapper>
         <NavLinks />
       </Wrapper>

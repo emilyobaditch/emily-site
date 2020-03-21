@@ -1,11 +1,11 @@
 export interface Space {
-  NONE: number;
-  XS: number;
-  S: number;
-  M: number;
-  L: number;
-  XL: number;
-  XXL: number;
+  NONE: number
+  XS: number
+  S: number
+  M: number
+  L: number
+  XL: number
+  XXL: number
 }
 
 export const space: Space = {
@@ -16,4 +16,4 @@ export const space: Space = {
   L: 16,
   XL: 32,
   XXL: 64,
-};
+}
