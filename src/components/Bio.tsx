@@ -41,7 +41,7 @@ export default function Bio() {
           <br />
           That&apos;s about it for now!
         </Paragraph>
-        <Image src="/images/background.png" />
+        <Image src="images/background.png" />
       </BioBase>
     </Base>
   )

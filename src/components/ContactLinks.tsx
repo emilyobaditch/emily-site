@@ -15,10 +15,10 @@ export default function ContactLinks() {
   return (
     <ContactLinksBase>
       <a href={'https://github.com/emilyobaditch'}>
-        <Icon src="/images/github.png" />
+        <Icon src="images/github.png" />
       </a>
       <a href={'https://www.linkedin.com/in/emily-obaditch-a0090511b/'}>
-        <Icon src="/images/linkedin.png" />
+        <Icon src="images/linkedin.png" />
       </a>
     </ContactLinksBase>
   )
