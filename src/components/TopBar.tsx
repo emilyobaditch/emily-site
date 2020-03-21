@@ -14,6 +14,7 @@ const TopBarBase = styled.div`
   top: 0;
   height: 62px;
   width: 100%;
+  z-index: 99;
   background-color: ${({ theme }) => theme.colors.dull};
 `
 const Wrapper = styled(Box)`
