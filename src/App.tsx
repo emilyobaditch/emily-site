@@ -7,7 +7,7 @@ import Contact from './components/Contact'
 export default function App() {
   return (
     <div style={{ fontFamily: 'Spartan' }}>
-      <BrowserRouter>
+      <BrowserRouter basename={window.location.pathname || ''}>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/bio" component={Bio} />
