@@ -1,7 +1,7 @@
 import React from "react"
 import logo from "./logo.svg"
-import Home from "./Home"
-import Bio from './Bio'
+import Home from "./components/Home"
+import Bio from './components/Bio'
 import { Route, Switch, BrowserRouter } from 'react-router-dom'
 
 

@@ -1,10 +1,10 @@
-import { theme } from '.'
-import { StyledSystemProps } from './DynamicStyledSystemComponent'
+import { colors } from './colors';
+import { StyledSystemProps } from './DynamicStyledSystemComponent';
 
-const fontFamilies: { heading: string, body: string } = {
-  heading: 'Sanchez',
-  body: 'Sanchez',
-}
+const fontFamilies: { heading: string; body: string } = {
+  heading: 'Montserrat, serif',
+  body: 'Raleway, sans-serif',
+};
 
 interface TypographyStyles {
   H1: StyledSystemProps;
@@ -28,7 +28,7 @@ export const typographyStyles: TypographyStyles = {
   H2: {
     fontSize: [37, 39, 41, 43],
     fontWeight: 700,
-    color: theme.colors.primary.dull,
+    color: colors.primary,
     fontFamily: fontFamilies.heading,
     as: 'h2',
   },
@@ -41,7 +41,7 @@ export const typographyStyles: TypographyStyles = {
   H4: {
     fontSize: [18, 20, 22, 24],
     fontWeight: 700,
-    color: theme.colors.primary.darker,
+    color: colors.primary,
     fontFamily: fontFamilies.heading,
     as: 'h4',
   },
@@ -77,8 +77,8 @@ export const typographyStyles: TypographyStyles = {
   },
   Link: {
     fontWeight: 700,
-    color: theme.colors.primary.dark,
+    color: colors.primary,
     fontSize: [14, 15, 15, 16],
     fontFamily: fontFamilies.body,
   },
-}
+};

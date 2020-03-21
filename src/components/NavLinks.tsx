@@ -1,6 +1,8 @@
 import React from 'react'
-import Text from '../atoms/Text'
+import { Typography}  from '../styleguide/Typography'
 import { Link } from 'react-router-dom'
+
+const { H3 } = Typography;
 
 
 export default function NavLinks(){
@@ -8,10 +10,10 @@ export default function NavLinks(){
 return (
     <>
         <Link to={"/"}>
-            <Text>Home</Text>
+            <H3>Home</H3>
         </Link>
         <Link to={"/bio"}>
-            <Text>Bio</Text>
+            <H3>Bio</H3>
         </Link>
     </>
     )
