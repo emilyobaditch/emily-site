@@ -18,7 +18,7 @@ const Image = styled.img`
   width: 100%;
   position: fixed;
   bottom: 0;
-  opacity: 20%;
+  opacity: 0.2;
   z-index: -1;
 `
 export default function Bio() {
