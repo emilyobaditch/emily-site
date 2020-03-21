@@ -14,7 +14,7 @@ const Image = styled.img`
 `
 const MobileImage = styled.img`
   position: fixed;
-  opacity: 20%;
+  opacity: 0.2;
   bottom: 0;
   z-index: -1;
 `
