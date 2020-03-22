@@ -8,8 +8,8 @@ import { useMediaQuery } from '../utils/hooks'
 const { LargeLead, H2 } = Typography
 
 const Image = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 60%;
   z-index: -1;
 `
 const MobileImage = styled.img`
