@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/emily-site/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/emily-site/static/js/main.495e4314.chunk.js",
-    "main.js.map": "/emily-site/static/js/main.495e4314.chunk.js.map",
+    "main.js": "/emily-site/static/js/main.0561885d.chunk.js",
+    "main.js.map": "/emily-site/static/js/main.0561885d.chunk.js.map",
     "runtime-main.js": "/emily-site/static/js/runtime-main.95bd6101.js",
     "runtime-main.js.map": "/emily-site/static/js/runtime-main.95bd6101.js.map",
-    "static/js/2.f40dbd74.chunk.js": "/emily-site/static/js/2.f40dbd74.chunk.js",
-    "static/js/2.f40dbd74.chunk.js.map": "/emily-site/static/js/2.f40dbd74.chunk.js.map",
+    "static/js/2.230fec9e.chunk.js": "/emily-site/static/js/2.230fec9e.chunk.js",
+    "static/js/2.230fec9e.chunk.js.map": "/emily-site/static/js/2.230fec9e.chunk.js.map",
     "index.html": "/emily-site/index.html",
-    "precache-manifest.86a33bcfc9ce02fc69b02f4d916c73aa.js": "/emily-site/precache-manifest.86a33bcfc9ce02fc69b02f4d916c73aa.js",
+    "precache-manifest.81d3dcd3b6fb9c7eec529eddc0cdc263.js": "/emily-site/precache-manifest.81d3dcd3b6fb9c7eec529eddc0cdc263.js",
     "service-worker.js": "/emily-site/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/emily-site/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.f40dbd74.chunk.js.LICENSE.txt": "/emily-site/static/js/2.f40dbd74.chunk.js.LICENSE.txt"
+    "static/js/2.230fec9e.chunk.js.LICENSE.txt": "/emily-site/static/js/2.230fec9e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.95bd6101.js",
-    "static/js/2.f40dbd74.chunk.js",
+    "static/js/2.230fec9e.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.495e4314.chunk.js"
+    "static/js/main.0561885d.chunk.js"
   ]
 }
