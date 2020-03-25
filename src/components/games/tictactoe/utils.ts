@@ -19,6 +19,5 @@ export const checkWinner = ({ gameState }: Record<string, any>) => {
       return [true, gameState[WIN_COMBOS[i][0]]]
     }
   }
-  console.log(gameState)
   return [false, '']
 }
