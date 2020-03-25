@@ -8,7 +8,7 @@ import Games from './components/Games'
 export default function App() {
   return (
     <div style={{ fontFamily: 'Spartan' }}>
-      <BrowserRouter basename={window.location.pathname || ''}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/bio" component={Bio} />
