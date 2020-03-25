@@ -23,6 +23,9 @@ export default function NavLinks() {
       <Link style={{ textDecoration: 'none' }} to={'/contact'}>
         <H5 paddingRight="12px">Contact</H5>
       </Link>
+      <Link style={{ textDecoration: 'none' }} to={'/games'}>
+        <H5 paddingRight="12px">Bored?</H5>
+      </Link>
     </NavLinkBase>
   )
 }

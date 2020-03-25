@@ -3,10 +3,6 @@ import DynamicStyledSystemComponent, { StyledSystemProps } from './DynamicStyled
 
 const baseBoxStyles: StyledSystemProps = {}
 
-interface BoxProps {
-  Box: React.FC<StyledSystemProps>
-}
-
 const Box: (boxStyle: StyledSystemProps) => React.FC<StyledSystemProps> = boxStyle => {
   const component: React.FC<StyledSystemProps> = props => (
     <DynamicStyledSystemComponent {...boxStyle} {...props}>
