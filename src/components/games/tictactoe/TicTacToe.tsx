@@ -84,12 +84,13 @@ const TicTacToe: React.FC = () => {
 
   return (
     <Board>
-      <LargeLead>{`Current Player: ${isOnePlayer ? 'X' : currPlayer} `}</LargeLead>
-      {winner && (
+      {winner || gameFull ? (
         <>
-          <SmallLead>{`Player ${winner} wins!`}</SmallLead>
+          <SmallLead>{winner ? `Player ${winner} wins!` : `Oop, that's a draw!`}</SmallLead>
           <PlayAgainButton onClick={handleReset}>Play again?</PlayAgainButton>
         </>
+      ) : (
+        <LargeLead>{`Current Player: ${isOnePlayer ? 'X' : currPlayer} `}</LargeLead>
       )}
       {ROW_INDEX.map(val => {
         return (
