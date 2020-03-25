@@ -18,7 +18,7 @@ const MobileImage = styled.img`
   bottom: 0;
   z-index: -1;
 `
-const TopWrapper = styled(Box)`
+const Wrapper = styled(Box)`
   display: flex;
   align-items: center;
   position: relative;
@@ -27,7 +27,7 @@ export default function Home() {
   const smUp = useMediaQuery(2)
   return (
     <Base>
-      <TopWrapper>
+      <Wrapper>
         <Box paddingLeft="5px">
           <H2 color="darker" textAlign="center">
             Hey, there! I&apos;m Emily.
@@ -37,7 +37,7 @@ export default function Home() {
           </LargeLead>
         </Box>
         {smUp ? <Image src="images/emily.jpeg" /> : <MobileImage src="images/emily.jpeg" />}
-      </TopWrapper>
+      </Wrapper>
     </Base>
   )
 }

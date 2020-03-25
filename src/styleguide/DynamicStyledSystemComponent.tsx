@@ -1,9 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 import {
   borderRadius,
   BorderRadiusProps,
+  border,
+  BorderProps,
   color,
+  layout,
+  LayoutProps,
   fontFamily,
   FontFamilyProps,
   fontSize,
@@ -24,7 +28,7 @@ import {
   TextAlignProps,
   textStyle,
   TextStyleProps,
-} from 'styled-system';
+} from 'styled-system'
 
 export type StyledSystemProps =
   | SpaceProps
@@ -36,23 +40,27 @@ export type StyledSystemProps =
   | FontFamilyProps
   | FontWeightProps
   | BorderRadiusProps
+  | BorderProps
+  | LayoutProps
   | FontFamilyProps
   | LineHeightProps
   | TextAlignProps
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  | { color: string; as?: keyof JSX.IntrinsicElements | React.ComponentType<any> };
+  | { color: string; as?: keyof JSX.IntrinsicElements | React.ComponentType<any> }
 
 export default styled.div`
   ${space}
   ${fontSize}
   ${fontStyle}
   ${size}
+  ${layout}
   ${color}
   ${textStyle}
   ${letterSpacing}
   ${fontFamily}
   ${fontWeight}
   ${borderRadius}
+  ${border}
   ${lineHeight}
   ${textAlign}
-`;
+`
