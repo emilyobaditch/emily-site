@@ -13,6 +13,8 @@ const RowBase = styled(Box)`
 `
 
 const PlayAgainButton = styled.button`
+  background-color: #fff;
+  border: none;
   color: ${({ theme }) => theme.colors.darker};
 `
 
@@ -27,6 +29,8 @@ const Board = styled(Box)`
 const TicTacToe: React.FC = () => {
   const [currPlayer, setCurrPlayer] = React.useState('X')
   const [isOnePlayer, setIsOnePlayer] = React.useState(false)
+
+  const [gameFull, setGameFull] = React.useState(false)
   const [gameState, setGameState] = React.useState<Record<string, string> | null>(null)
   const [winner, setWinner] = React.useState(null)
   const onSquareClick = React.useCallback(
@@ -41,11 +45,12 @@ const TicTacToe: React.FC = () => {
 
   const handleReset = () => {
     setGameState({})
+    setGameFull(false)
     setCurrPlayer('X')
   }
 
   const setOnePlayer = () => {
-    setIsOnePlayer(true)
+    setIsOnePlayer(!isOnePlayer)
     handleReset()
   }
   const squareSymbol = (id: string | number) => {
@@ -60,6 +65,9 @@ const TicTacToe: React.FC = () => {
       const [isWinner, player] = checkWinner({ gameState })
       if (isWinner) {
         setWinner(player)
+      }
+      if (Object.keys(gameState).length === 9) {
+        setGameFull(true)
       }
     }
   }, [gameState])
@@ -87,19 +95,19 @@ const TicTacToe: React.FC = () => {
         return (
           <RowBase key={val}>
             <Square
-              disabled={!!winner}
+              disabled={!!winner || gameFull}
               id={val}
               onClick={onSquareClick}
               symbol={squareSymbol(val)}
             />
             <Square
-              disabled={!!winner}
+              disabled={!!winner || gameFull}
               id={val + 1}
               onClick={onSquareClick}
               symbol={squareSymbol(val + 1)}
             />
             <Square
-              disabled={!!winner}
+              disabled={!!winner || gameFull}
               id={val + 2}
               onClick={onSquareClick}
               symbol={squareSymbol(val + 2)}
